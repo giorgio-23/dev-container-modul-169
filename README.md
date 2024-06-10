@@ -1,55 +1,52 @@
-Projektübersicht
+<h1>Projektübersicht</h1>
 
-Dieses Projekt ist eine einfache Webanwendung, die mit Node.js entwickelt wurde. Die Entwicklungsumgebung ist in einem Docker Dev-Container konfiguriert, um eine konsistente und reproduzierbare Entwicklungsumgebung zu gewährleisten. Diese Anleitung beschreibt, wie das Repository in einem Dev-Container geöffnet und die Anwendung gestartet wird.
-Voraussetzungen
+<p>Dieses Projekt ist eine einfache Webanwendung, die mit Node.js entwickelt wurde. Die Entwicklungsumgebung ist in einem Docker Dev-Container konfiguriert, um eine konsistente und reproduzierbare Entwicklungsumgebung zu gewährleisten. Diese Anleitung beschreibt, wie das Repository in einem Dev-Container geöffnet und die Anwendung gestartet wird.</p>
 
-Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Softwarekomponenten auf Ihrem Computer installiert sind:
+<h2>Voraussetzungen</h2>
 
-    Docker Desktop (inkl. Docker und Docker Compose)
-    Visual Studio Code
-    Dev - Containers Extension für Visual Studio Code
+<p>Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Softwarekomponenten auf Ihrem Computer installiert sind:</p>
 
-Schritte zum Starten der Anwendung
-1. Repository klonen
+<ul>
+  <li>Docker Desktop (inkl. Docker und Docker Compose)</li>
+  <li>Visual Studio Code</li>
+  <li>Dev - Containers Extension für Visual Studio Code</li>
+</ul>
 
-Klonen Sie dieses Repository auf Ihren lokalen Rechner:
+<h2>Schritte zum Starten der Anwendung</h2>
 
-sh
+<ol>
+  <li><strong>Repository klonen</strong></li>
+  <p>Klonen Sie dieses Repository auf Ihren lokalen Rechner:</p>
+  <pre><code>git clone https://github.com/giorgio-23/dev-container-modul-169.git
+cd dev-container-modul-169</code></pre>
 
-git clone https://github.com/giorgio-23/dev-container-modul-169.git
-cd dev-container-modul-169
+  <li><strong>Visual Studio Code öffnen</strong></li>
+  <p>Öffnen Sie Visual Studio Code und laden Sie das geklonte Repository.</p>
 
-2. Visual Studio Code öffnen
+  <li><strong>Dev-Container öffnen</strong></li>
+  <p>Öffnen Sie die Kommando-Palette (mit <kbd>F1</kbd> oder <kbd>Ctrl+Shift+P</kbd>). Geben Sie <code>Dev-Containers: Reopen in Container</code> ein und wählen Sie diesen Befehl aus.</p>
+  <p>Visual Studio Code wird nun die Docker-Umgebung einrichten und das Projekt im Dev-Container öffnen. Dies kann einige Minuten dauern.</p>
 
-Öffnen Sie Visual Studio Code und laden Sie das geklonte Repository.
-3. Dev-Container öffnen
+  <li><strong>Anwendung starten</strong></li>
+  <p>Sobald der Dev-Container eingerichtet ist, können Sie die Anwendung starten:</p>
+  <p>Öffnen Sie ein neues Terminal in Visual Studio Code (Terminal &gt; Neues Terminal). Geben Sie den folgenden Befehl ein, um die Anwendung zu starten:</p>
+  <pre><code>npm start</code></pre>
 
-    Öffnen Sie die Kommando-Palette (mit F1 oder Ctrl+Shift+P).
-    Geben Sie Dev-Containers: Reopen in Container ein und wählen Sie diesen Befehl aus.
+  <li><strong>Anwendung im Browser anzeigen</strong></li>
+  <p>Öffnen Sie Ihren Webbrowser und navigieren Sie zu <a href="http://localhost:3000">http://localhost:3000</a>, um die laufende Anwendung zu sehen.</p>
+</ol>
 
-Visual Studio Code wird nun die Docker-Umgebung einrichten und das Projekt im Dev-Container öffnen. Dies kann einige Minuten dauern.
-4. Anwendung starten
+<h2>Entwicklungswerkzeuge</h2>
 
-Sobald der Dev-Container eingerichtet ist, können Sie die Anwendung starten:
+<p>Im Dev-Container sind folgende Erweiterungen für Visual Studio Code installiert, um die Entwicklung zu unterstützen:</p>
 
-    Öffnen Sie ein neues Terminal in Visual Studio Code (Terminal > Neues Terminal).
-    Geben Sie den folgenden Befehl ein, um die Anwendung zu starten:
+<ul>
+  <li>ESLint (<code>dbaeumer.vscode-eslint</code>)</li>
+  <li>Prettier - Code formatter (<code>esbenp.prettier-vscode</code>)</li>
+</ul>
 
-sh
+<p>Diese Erweiterungen helfen, den Code konsistent und fehlerfrei zu halten.</p>
 
-npm start
+<h2>Anpassungen und Erweiterungen</h2>
 
-5. Anwendung im Browser anzeigen
-
-Öffnen Sie Ihren Webbrowser und navigieren Sie zu http://localhost:3000, um die laufende Anwendung zu sehen.
-Entwicklungswerkzeuge
-
-Im Dev-Container sind folgende Erweiterungen für Visual Studio Code installiert, um die Entwicklung zu unterstützen:
-
-    ESLint (dbaeumer.vscode-eslint)
-    Prettier - Code formatter (esbenp.prettier-vscode)
-
-Diese Erweiterungen helfen, den Code konsistent und fehlerfrei zu halten.
-Anpassungen und Erweiterungen
-
-Sie können die Konfiguration des Dev-Containers nach Bedarf anpassen, indem Sie die Dateien devcontainer.json und Dockerfile im Verzeichnis .devcontainer bearbeiten.
+<p>Sie können die Konfiguration des Dev-Containers nach Bedarf anpassen, indem Sie die Dateien <code>devcontainer.json</code> und <code>Dockerfile</code> im Verzeichnis <code>.devcontainer</code> bearbeiten.</p>
